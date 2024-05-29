@@ -22,15 +22,30 @@
         </thead>
         <tbody>
             <tr class="">
-                <td scope="row">R1C1</td>
-                <td>R1C2</td>
-                <td>R1C3</td>
-            </tr>
-            <tr class="">
-                <td scope="row">Item</td>
-                <td>Item</td>
-                <td>Item</td>
-            </tr>
+                <td scope="row">Hojitas</td>
+                <td>1.60</td>
+                <td>1</td>
+                <td>img.jpg</td>
+                <td>dd/mm/yy</td>
+                <td>
+                <a
+                            name=""
+                            id=""
+                            class="btn btn-info"
+                            href="#"
+                            role="button"
+                            >Agregar</a
+                        >
+                        <a
+                            name=""
+                            id=""
+                            class="btn btn-danger"
+                            href="#"
+                            role="button"
+                            >Eliminar</a
+                        >
+</td>
+           
         </tbody>
     </table>
 </div>

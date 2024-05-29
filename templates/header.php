@@ -1,6 +1,6 @@
 <?php
 //URL base
-$url_base="http://localhost/SistemaDeFacturacion/";
+$url_base="http://localhost/SistemaDeFacturacionPan/";
 
 ?>
 <!doctype html>
