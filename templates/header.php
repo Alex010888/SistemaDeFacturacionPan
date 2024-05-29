@@ -30,10 +30,10 @@ $url_base="http://localhost/SistemaDeFacturacionPan/";
         <nav class="navbar navbar-expand navbar-light bg-light">
             <ul class="nav navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Sistema <span class="sr-only"></span></a>
+                    <a class="nav-link" href="<?php echo $url_base?>">Sistema <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Venta rapida</a>
+                    <a class="nav-link" href="SistemaDeFacturacionPan/venta.php">Venta rapida</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo $url_base?>sessiones/pan/">Ingreso de productos</a>
