@@ -25,6 +25,7 @@
                         <th scope="col">Foto</th>
                         <th scope="col">Puesto</th>
                         <th scope="col">Contraseña</th>
+                        <th scope="col">Fecha</th>
                         <th scope="col">Acciones</th>
                     </tr>
                 </thead>
@@ -34,6 +35,7 @@
                         <td>img.jpg</td>
                         <td>--</td>
                         <td>0000</td>
+                        <td>Fecha</td>
                        <td>
                         <a
                             name=""

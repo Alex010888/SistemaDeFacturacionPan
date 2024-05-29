@@ -1,0 +1,1 @@
+CREATE TABLE `panaderiav`.`tblusuarios` (`idusuario` INT(11) NOT NULL AUTO_INCREMENT , `nombre` VARCHAR(255) NOT NULL , `foto` VARCHAR(255) NOT NULL , `puesto` VARCHAR(255) NOT NULL , `ciudad` VARCHAR(255) NOT NULL , `contraseña` VARCHAR(255) NOT NULL , `fecha` DATE NOT NULL , `idventa` INT(11) NOT NULL , PRIMARY KEY (`idusuario`)) ENGINE = InnoDB;

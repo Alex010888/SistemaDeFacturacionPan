@@ -1,5 +1,6 @@
 <?php include("../../templates/header.php");
  ?>
+ </br>
  <div class="card">
     <div class="card-header">Datos</div>
     <div class="card-body">
@@ -15,17 +16,7 @@
                     aria-describedby="helpId"
                     placeholder="Nombre"
                 />
-            <div class="mb-3">
-                <label for="" class="form-label">Apellido</label>
-                <input
-                    type="text"
-                    class="form-control"
-                    name="Apellido"
-                    id="Apellido"
-                    aria-describedby="helpId"
-                    placeholder="Apellido"
-                />
-            <div class="mb-3">
+                <div class="mb-3">
                 <label for="" class="form-label">Foto</label>
                 <input
                     type="file"
@@ -33,20 +24,42 @@
                     name="Foto"
                     id="Foto"
                     aria-describedby="helpId"
-                    placeholder=""
+                    placeholder="Foto"
                 />
                 <div class="mb-3">
                     <label for="Puesto" class="form-label">Puesto</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    name="Puesto"
+                    id="Puesto"
+                    aria-describedby="helpId"
+                    placeholder="Puesto"
+                />
+                <label for="ciudad" class="form-label">Ciudad</label>
                     <select
                         class="form-select form-select-sm"
-                        name="Puesto"
-                        id="Puesto"
+                        name="ciudad"
+                        id="ciudad"
                     >
-                        <option selected>Select one</option>
+                        <option selected>Selecionar ciudad</option>
                         <option value="">New Delhi</option>
                         <option value="">Istanbul</option>
                         <option value="">Jakarta</option>
                     </select>
+            
+                <div class="mb-3">
+                <label for="" class="form-label">Contraseña</label>
+                <input
+                    type="password"
+                    class="form-control"
+                    name="Contraseña"
+                    id="Contraseña"
+                    aria-describedby="helpId"
+                    placeholder="Contraseña"
+                />
+           
+                
                 <div class="mb-3">
                     <label for="" class="form-label">Fecha</label>
                     <input
@@ -69,9 +82,17 @@
                     name=""
                     id=""
                     class="btn btn-primary"
+                    href="editar.php"
+                    role="button"
+                    >Editar</a
+                >
+                <a
+                    name=""
+                    id=""
+                    class="btn btn-primary"
                     href="index.php"
                     role="button"
-                    >Cancealar</a
+                    >Cancelar</a
                 >
                 
                 
@@ -87,7 +108,7 @@
         </form>
 
     </div>
-    <div class="card-footer text-muted">Footer</div>
+   
  </div>
  
 

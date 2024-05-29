@@ -40,7 +40,7 @@
                             name=""
                             id=""
                             class="btn btn-danger"
-                            href="#"
+                            href="index.php"
                             role="button"
                             >Eliminar</a
                         >
