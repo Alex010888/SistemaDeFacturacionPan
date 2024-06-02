@@ -1,6 +1,6 @@
 </main>
         <footer>
-           @panaderisonia
+       <div>&copy;<?php echo date("Y");?></div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
