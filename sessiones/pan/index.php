@@ -1,6 +1,8 @@
 <?php 
 include("../../db.php");
-$sentencia=$conn->prepare("SELECT * FROM `productos`");
+$sentencia=$conn->prepare("SELECT *,(SELECT nombre FROM categorias
+WHERE categorias.id=productos.categoria_id limit 1) as categoria
+ FROM `productos`");
 $sentencia->execute();
 $listar_tbl_pan = $sentencia->fetchAll(PDO::FETCH_ASSOC);
 
@@ -41,10 +43,10 @@ print_r($listar_tbl_pan);
             <?php foreach ($listar_tbl_pan as $registro){?>
                 <tr class="">
                 <td scope="row"><?php echo $registro["nombre"]?></td>
-                <td>1.60</td>
-                <td>1</td>
-                <td>img.jpg</td>
-                <td>dd/mm/yy</td>
+                <td><?php echo $registro["precio"]?></td>
+                <td><?php echo $registro["categoria"]?></td>
+                <td><?php echo $registro["foto"]?></td>
+                <td><?php echo $registro["fecha"]?></td>
                 <td>
                 <a
                             name=""

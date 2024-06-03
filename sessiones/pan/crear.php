@@ -2,20 +2,24 @@
  ?>
  <?php 
  include("../../db.php")
-if($_POST){
-    print_r($_POST);
+
+ $sentencia=$conn->prepare("SELECT *,(SELECT nombre FROM categorias
+ WHERE categorias.id=productos.categoria_id limit 1) as categoria
+  FROM `productos`");
+ $sentencia->execute();
+ $listar_tbl_pan = $sentencia->fetchAll(PDO::FETCH_ASSOC);
 
       //Recolectando los datos
-      $nombre = (isset($_POST["Nombre"])?$_POST["Nombre"]:"");
+      //$nombre = (isset($_POST["Nombre"])?$_POST["Nombre"]:"");
       
-}
+
 
  ?>
  </br>
  <div class="card">
     <div class="card-header">Datos para registrar productos</div>
     <div class="card-body">
-        <form action="process_form.php" method="post" enctype="multipart/form-data">
+        <form action="" method="post" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="Nombre" class="form-label">Nombre del producto</label>
                 <input type="text" class="form-control" name="Nombre" id="Nombre" aria-describedby="helpId" placeholder="Nombre" />
@@ -31,11 +35,12 @@ if($_POST){
             <div class="mb-3">
                 <label for="Categoria" class="form-label">Categoria</label>
                 <select class="form-select form-select-sm" name="Categoria" id="Categoria">
-                    <option selected>Categoria</option>
-                    <option value="New Delhi">New Delhi</option>
-                    <option value="Istanbul">Istanbul</option>
-                    <option value="Jakarta">Jakarta</option>
+                <?php foreach($listar_roductos as $registro) {?>  
+                
+                    <option value=""><?php echo $registro["categoria"]?></option>
+                
                 </select>
+                <?php }?>
             </div>
             <div class="mb-3">
                 <label for="Descripcion" class="form-label">Descripcion</label>
