@@ -1,12 +1,20 @@
 <?php
 //URL base
-$url_base="http://localhost/SistemaDeFacturacion/";
+$url_base="http://localhost/SistemaDeFacturacionPan/";
 
 ?>
 <!doctype html>
 <html lang="en">
     <head>
+        
         <title>Sistema de panaderia</title>
+        <style>
+    footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1; /* Opcional: añade un color de fondo al footer */
+        }
+        </style>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -30,7 +38,7 @@ $url_base="http://localhost/SistemaDeFacturacion/";
         <nav class="navbar navbar-expand navbar-light bg-light">
             <ul class="nav navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Sistema <span class="sr-only"></span></a>
+                    <a class="nav-link" href="../../index.php">Sistema <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Venta rapida</a>
