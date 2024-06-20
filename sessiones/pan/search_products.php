@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     try {
         $sql = "SELECT *, (SELECT nombre FROM categorias WHERE categorias.id = productos.categoria_id LIMIT 1) AS categoria 
                 FROM productos 
-                WHERE LOWER(nombre) LIKE :searchText";
+                WHERE LOWER(nombre) LIKE :searchText" ;
         $stmt = $conn->prepare($sql);
         $stmt->bindValue(':searchText', '%' . strtolower($searchText) . '%', PDO::PARAM_STR);
         $stmt->execute();
