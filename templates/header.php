@@ -4,7 +4,7 @@ $url_base="http://localhost/SistemaDeFacturacionPan/";
 
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="es">
     <head>
         
         <title>Sistema de panaderia</title>
@@ -29,6 +29,16 @@ $url_base="http://localhost/SistemaDeFacturacionPan/";
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+        crossorigin="anonymous">
+        </script>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
+ 
+<script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+
     </head>
 
     <body>

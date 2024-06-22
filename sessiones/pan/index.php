@@ -57,7 +57,7 @@ try {
         </div>
 
         <div class="table-responsive-sm">
-            <table class="table table-primary">
+            <table class="table table-primary" id="tabla_id">
                 <thead>
                     <tr>
                         <th scope="col">ID</th>

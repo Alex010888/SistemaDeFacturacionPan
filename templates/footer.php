@@ -16,5 +16,20 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+        <script>
+    $(document).ready(function(){
+        $("#tabla_id").DataTable({
+            "pageLength": 3,
+            "lengthMenu": [
+                [3, 10, 25, 50],
+                [3, 10, 25, 50]
+            ],
+            "language": {
+                "url": 'https://cdn.datatables.net/plug-ins/2.0.8/i18n/es-ES.json'
+            }
+        });
+    });
+</script>
+
     </body>
 </html>
