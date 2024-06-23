@@ -50,14 +50,15 @@ try {
     <div class="card-header">Lista de productos</div>
     <a name="" id="" class="btn btn-primary" href="crear.php" role="button">Agregar registro</a>
     <div class="card-body">
-        <!-- Agregamos el campo de búsqueda -->
+    <!-- 
+    Agregamos el campo de búsqueda 
         <div class="mb-3">
             <label for="searchInput" class="form-label">Buscar producto:</label>
             <input type="text" class="form-control" id="searchInput" placeholder="Ingrese el nombre del producto">
         </div>
-
+        -->
         <div class="table-responsive-sm">
-            <table class="table table-primary" id="tabla_id">
+            <table class="table" id="tabla_id">
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
@@ -95,7 +96,7 @@ try {
 <?php include("../../templates/footer.php"); ?>
 
 <!-- Script de AJAX para la búsqueda en vivo y eliminar producto -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function() {
         // AJAX para búsqueda en vivo
@@ -133,4 +134,4 @@ try {
             }
         });
     });
-</script>
+</script>-->

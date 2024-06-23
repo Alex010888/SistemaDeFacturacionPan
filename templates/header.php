@@ -51,7 +51,7 @@ $url_base="http://localhost/SistemaDeFacturacionPan/";
                     <a class="nav-link" href="../../index.php">Sistema <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Venta rapida</a>
+                    <a class="nav-link" href="<?php echo $url_base ?>sessiones/pan/venta.php">Venta rapida</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo $url_base?>sessiones/pan/">Ingreso de productos</a>
