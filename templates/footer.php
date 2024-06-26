@@ -22,8 +22,8 @@
         $("#tabla_id").DataTable({
             "pageLength": 3,
             "lengthMenu": [
-                [2, 10, 25, 50],
-                [2, 10, 25, 50]
+                [3, 10, 25, 50],
+                [3, 10, 25, 50]
             ],
             "language": {
                 "url": 'https://cdn.datatables.net/plug-ins/2.0.8/i18n/es-ES.json'

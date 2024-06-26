@@ -7,8 +7,8 @@ if(isset($_GET['txtID'])) {
    $sentencia = $conn->prepare("DELETE FROM usuario WHERE id=:id");
    $sentencia->bindParam(":id", $txtID);
    $sentencia->execute();
-
-   header('Location:index.php');
+   $mensaje = "Registro eliminado";
+   header('Location:index.php?mensaje='.$mensaje);
 }
 
 try {
@@ -25,6 +25,13 @@ try {
 }
 ?>
 <?php include("../../templates/header.php"); ?>
+<?php 
+if(isset($_GET['mensaje'])){
+?>
+<script>
+    Swal.fire({icon:"success",title:"<?php echo $_GET['mensaje']; ?>"});
+</script>
+<?php } ?>
 <br/>
 <div class="card">
     <div class="card-header"><h4>Usuarios</h4></div>
@@ -64,7 +71,7 @@ try {
                             name=""
                             id=""
                             class="btn btn-danger"
-                            href="index.php?txtID=<?php echo $registro['id']; ?>"
+                            href="javascript:borrar(<?php echo $registro['id']; ?>);"
                             role="button"
                             >Eliminar</a
                         >
@@ -83,6 +90,23 @@ try {
             </table>
         </div>
     </div>
+    <script>
+      function borrar(id){
+       
+        Swal.fire({
+           title: "Deseas borrar el registro?",
+
+           showCancelButton: true,
+           confirmButtonText: "Si, borrar",
+
+         }).then((result) => {
+ 
+            if (result.isConfirmed) {
+            window.location="index.php?txtID="+id;
+        }
+    })
+}
+    </script>
 </div>
 
 <?php include("../../templates/footer.php"); ?>
